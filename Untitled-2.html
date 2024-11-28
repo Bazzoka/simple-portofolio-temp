@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahmed Mohamed's Front-End Developer Portfolio">
+  <title>Ahmed Mohamed | Front-End Developer</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(120deg, #f4f4f4, #e0e0e0);
+    }
+    h1, h2, h3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Header */
+    .header {
+      background-color: #222;
+      padding: 1rem 2rem;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin: 0 1rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #1e90ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)),
+                  url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #1e90ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #0a5ba1;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 4rem 2rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+    p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-10px);
+    }
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project h3 {
+      margin: 1rem;
+      font-size: 1.5rem;
+    }
+    .project p {
+      margin: 1rem;
+      font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skills ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .skills li {
+      margin: 1rem;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      background: #1e90ff;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .skills li:hover {
+      transform: scale(1.1);
+    }
+
+    /* Contact Section */
+    .contact a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #1e90ff;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+    .socials a {
+      margin: 0 1rem;
+      color: #333;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #1e90ff;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1>Ahmed Mohamed</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Ahmed!</h2>
+    <p>A passionate Front-End Developer crafting modern and responsive websites.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a 19-year-old Front-End Developer and cybersecurity enthusiast. I create engaging, responsive websites and love solving problems with technology.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="C:\Users\20122\Downloads\th (1).jpg" alt="E-Commerce Project">
+        <h3>E-Commerce Platform</h3>
+        <p>A responsive e-commerce website built using Angular, HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <img src="C:\Users\20122\Downloads\th (3).jpg" alt="out look clone">
+        <h3>LinkedIn Clone</h3>
+        <p>A out look -inspired platform with user authentication and profile features.</p>
+      </div>
+      <div class="project">
+        <img src="C:\Users\20122\Downloads\th (4).jpg" alt="Currency Converter">
+        <h3>Currency Converter</h3>
+        <p>A real-time currency converter built using JavaScript and a public API.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Angular</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out if you're interested in working together or have any questions!</p>
+    <a href="ahmedmoghny212@gmail.com">Email Me</a>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="https://github.com/Bazzoka">GitHub</a>
+    </div>
+    <p>Check out more of my work on <a href="https://github.com/Bazzoka" target="_blank">GitHub</a>.</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Ahmed Mohamed. All rights reserved.</p>
+  </footer>
+</body>
+</html>
